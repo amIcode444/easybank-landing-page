@@ -118,6 +118,10 @@ footer {
 /* HERO SECTION */
 .hero__container {
   align-items: center;
+  background-image: url('/images/bg-intro-desktop.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: 90% 10%;
   display: flex;
   justify-content: space-between;
 }
@@ -175,6 +179,11 @@ footer {
   gap: 25px;
 }
 
+.card__author {
+  font-size: 14px;
+  margin: 15px 0;
+}
+
 .latest__title {
   font-size: 30px;
   margin-bottom: 30px;
@@ -187,7 +196,10 @@ footer {
 }
 
 .card__image--rd {
-  object-fit: cover;
+  margin: 0;
+  width: 100%;
+  height: auto;
+  object-fit: contain;
   border-top-left-radius: 3px;
   border-top-right-radius: 3px;
 }
