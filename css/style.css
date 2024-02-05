@@ -78,9 +78,29 @@ footer {
   justify-content: space-between;
 }
 
+.header__nav {
+  position: relative;
+}
+
 .header__navlist {
   align-items: center;
   display: flex;
+  position: relative;
+}
+
+.header-nav__item::before::after {
+  height: 8px;
+  width: 0;
+  content: '';
+  position: absolute;
+  top: 72px;
+  bottom: 0;
+  border-radius: 3px;
+  z-index: 999;
+}
+
+.header-nav__item:hover {
+  width: 100%;
 }
 
 .header-nav__item {
@@ -211,4 +231,26 @@ footer {
 /* FOOTER SECTION */
 .footer {
   padding: 60px;
+}
+
+.footer__container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer-right__col {
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer__socials {
+  margin-top: 30px;
+}
+
+.footer__social-links {
+  display: flex;
+}
+
+.footer__social-items {
+  margin-right: 25px;
 }
